@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+/* Left panel styles */
+main .left {
+  background-color: rgb(28, 27, 27);
+  position: relative;
+  overflow: hidden; /* Hides any overflow, keeping children within bounds */
+}
+
+/* Code container styles within the left panel */
+main .left .code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Reset default styles for pre and code tags to ensure perfect alignment */
+main .left .code pre {
+  height: 100%;
+  width: 100%;
+  margin: 0; 
+  padding: 1rem;   /* Remove any default padding that might cause misalignment */
+  overflow: auto; /* Enables scroll if code exceeds container size */
+  border-radius: 0.7rem;
+  background-color:rgb(28, 27, 27);
+}
+
+main .left .code pre code {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem; /* Optional: adjust for readability */
+}
+
+/* Review button styling */
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(147, 143, 143);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  color: rgb(42, 41, 43);
+}
+
+/* Right panel styles */
+main .right {
+  background-color: rgb(209, 188, 188);
+  padding: 1rem 2rem;
+  color: rgb(42, 41, 43);
+  overflow: auto;
+}
