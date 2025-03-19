@@ -1,5 +1,8 @@
 # AI Code Review
 
+<img src="Screen-shot.png" alt="Project Screenshot" width="600" />
+
+
 AI Code Review is a full-stack web application that allows users to submit any code snippet and receive AI-generated review suggestions and detailed explanations. The backend leverages the Google Gemini API (via the `@google/generative-ai` package) to analyze the input, while the frontend provides an interactive interface for users to paste their code, view suggestions, and learn why changes are recommended.
 
 ---
