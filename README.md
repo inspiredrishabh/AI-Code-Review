@@ -43,6 +43,7 @@ AI Code Review is a full-stack web application that allows users to submit any c
 
 ## Project Structure
 
+```plaintext
 ai-code-review/
 ├── backend/
 │   ├── server.js                # Main server file for the backend
